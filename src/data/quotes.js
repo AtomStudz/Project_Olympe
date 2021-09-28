@@ -1,0 +1,18 @@
+export default [
+  'l\'ignorant affirme, le savant doute, le sage réfléchit. Aristote',
+  'Il n\'y a point de génie sans un grain de folie. Aristote',
+  'La surprise est l\'épreuve du vrai courage. Aristote',
+  'Le courage est le juste milieu entre la peur et l\'audace. Aristote',
+  'La musique donne une âme à nos coeurs et des ailes à la pensée. Platon',
+  'La plus grande victoire, c\'est la victoire sur soi. Platon',
+  'L\'essentiel n\'est pas de vivre, mais de bien vivre. Platon',
+  'Fais preuve de gentillesse envers tous ceux que tu rencontres, leur combat est peut-être plus dur que le tien. Platon',
+  'Si un âne te donne un coup de pied, ne lui rends pas. Socrate',
+  'Le bonheur c\'est le plaisir sans remords. Socrate',
+  'La sagesse commence dans l\'émerveillement. Socrate',
+  'Ce qui fait l\'homme, c\'est sa grande faculté d\'adaptation. Socrate',
+  'Il est plus doux de donner que de recevoir. Epicure',
+  'L\'amitié fait le tour du monde et nous convie tous à nous réveiller pour la vie heureuse.Epicure',
+  'Si tu souris, c\'est moitié pour ton visage, moitié pour celui d\'autrui. La paix, c\'est comme un sourire. Epicure',
+  'Le dernier degré du bonheur est l\'absence de tout mal. Epicure',
+];

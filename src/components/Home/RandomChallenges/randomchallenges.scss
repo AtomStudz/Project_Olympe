@@ -1,0 +1,59 @@
+@use 'src/styles/vars';
+
+.one-random-challenge {
+  background-color: rgba(245, 241, 237, 0.2);
+  background-image: url("src/assets/images/laurel.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat:no-repeat;
+  position:inherit;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width:300px;
+  margin: 2em;
+  padding:7rem 0 0 0;
+  box-shadow: 0 8px 32px 0 vars.$fifthColor;
+  border-radius: 1em;
+  overflow: hidden;
+  text-align: center;
+  cursor:pointer;
+
+  .one-random-challenge-title {
+    color:white;
+    font-family: vars.$text-font;
+    font-size: 1rem;
+    width:40%;
+    height:8rem;
+    padding-bottom: 7rem;
+    font-weight: bold;
+  }
+
+  .one-random-challenge-extra {
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+
+    .random-challenge-category img{
+      width:2.5rem;
+      margin:1rem;
+    }
+
+
+    .random-challenge-difficulty img {
+      width:3rem;
+    }
+  }
+
+}
+  /* 
+  DESKTOP HELP 
+  we want to align in row all the four cards
+  width:25%;
+
+  */
+
+

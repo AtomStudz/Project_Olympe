@@ -1,0 +1,185 @@
+@use 'src/styles/vars';
+
+.challenge-page {
+  height:100%;
+  width: 100%;
+  background: vars.$secondColor;
+
+  .challenge-category {
+    margin-top:5rem;
+    background-image: url("../../assets/images/pexels-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 0 0 2.5rem;
+
+    .challenge-category-title {
+      width: 100%;
+      font-family: vars.$text-font;
+      font-weight: bold;
+      padding:1rem 0 0.5rem 2rem;
+      color:vars.$thirdColor;
+      font-size:2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 3px vars.$fifthColor;
+    }
+
+  }
+
+  .challenge-category img {
+    width:4rem;
+    padding:1rem 0 1rem 0;
+  }
+
+  .challenge-title {
+    font-family: vars.$text-font;
+    font-size: 2rem;
+    color:vars.$thirdColor;
+    font-weight: bold;
+    background-color: vars.$mainColor;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    padding:1.5rem 0 2rem 0;
+    text-shadow: 2px 2px 3px vars.$fourthColor;
+
+    .defi-flamme {
+      width:3rem;
+    }
+  }
+
+  .challenge {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    width:100%;
+    padding: 1rem 0 3rem 0;
+    background: linear-gradient(180deg, vars.$mainColor, #f2f7f9, vars.$secondColor);
+    
+    /*background-color: vars.$secondColor;*/
+
+    .challenge-content {
+      width:100%;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3rem 1rem 3rem 1rem;
+      
+
+      .challenge-image-content {
+        padding: 0 1rem 0 1rem;
+
+        .challenge-image {
+          width:100%;
+          max-width: 800px;
+          box-shadow: 0 8px 32px 0 vars.$fourthColor;
+          border-radius: 1em;
+          overflow: hidden;
+        }
+      }
+    
+      .challenge-description {
+        /*background-image: url("../../assets/images/pexels-background.jpg");*/
+        background-size:cover;
+        background-repeat:no-repeat;
+        font-family: vars.$text-font;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        color: vars.$fifthColor;
+        /*text-shadow: 2px 2px 3px vars.$fifthColor;*/
+        width: 350px;
+        background-image: url("../../assets/images/pexels-background2.jpg");
+        background-size: cover;
+        background-repeat: contain;
+        margin: 2em;
+        background-color: #ffff;
+        box-shadow: 0 8px 32px 0 vars.$fourthColor;
+        border-radius: 1em;
+        padding: 1rem 1rem;
+
+        .challenge-description-info {
+      
+        }
+      }
+
+    }
+
+    .challenge-info {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 1rem 0 1rem;
+      background-image: url("../../assets/images/pexels-background2.jpg");
+      background-size: cover;
+      background-repeat: contain;
+      
+
+      .tasks-info-title {
+        font-weight: bold;
+        text-align: center;
+        font-family: vars.$text-font;
+        text-shadow: 1px 1px 1.5px vars.$fourthColor;
+        font-size: 1.5rem;
+        color: vars.$fourthColor;
+        padding-bottom: 1rem;
+      }
+
+      .tasks-info {
+        width:100%;
+        font-family: vars.$text-font;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.1rem;
+        color: vars.$fifthColor;
+        padding: 1.5rem 0 3rem 0;
+      }
+
+      .cat-diff-content {
+        padding: 2rem 0 2rem 0;
+        display: flex;
+        justify-content: space-around;
+
+        .diff-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          .diff-content-title {
+            margin: 1rem 0;
+            font-family: vars.$text-quotes;
+            color: vars.$fifthColor;
+            font-weight: bolder;
+            font-size: 1.3rem
+          }
+        }
+
+        .participate-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          cursor:pointer;
+
+          .participate-title {
+            margin: 1rem 0;
+            font-family: vars.$text-quotes;
+            color: vars.$fifthColor;
+            font-weight: bolder;
+            font-size: 1.3rem
+          }
+        }
+        .difficulty-info {
+        width:4rem;
+        }
+      }
+
+    }
+  }
+
+}

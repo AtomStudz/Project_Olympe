@@ -1,0 +1,84 @@
+@use 'src/styles/vars';
+
+.subscribe-login {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  margin-top: 5rem;
+  background: linear-gradient(180deg, vars.$mainColor, #f2f7f9, vars.$secondColor);
+  
+  /* 
+  DESKTOP HELP 
+  justify-content:start
+  no flex-direction
+  
+  inscription is on the left
+  connexion on the right
+  */
+
+  h2 {
+    font-family: vars.$text-title;
+    font-weight: bold;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0 0 2rem 0;
+  }
+
+  p {
+    font-family:vars.$text-font;
+    margin-bottom: 2.5rem;
+  }
+  
+  .login-container {
+    height:90vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .subscribe {
+      width:100%;
+      text-align: center;
+      padding: 2rem 2rem 0 2rem;
+      line-height: 1.5rem;
+      margin:1rem 0 1rem 0;
+    }
+
+    .subscribe-button {
+      padding:1rem 1rem 1rem 1rem;
+      border-radius: 10px;
+      font-family: vars.$text-font;
+      font-size:1.1rem;
+      background-color:vars.$fifthColor;
+      color:vars.$secondColor;
+      font-weight: bold;
+      border:none;
+      
+      &:hover {
+        background-color: vars.$fourthColor;
+      }
+    }
+    
+    .login-button {
+      padding:1rem 1rem 1rem 1rem;
+      border-radius: 10px;
+      font-family: vars.$text-font;
+      font-size:1.1rem;
+      background-color:vars.$fifthColor;
+      color:vars.$secondColor;
+      font-weight: bold;
+      border:none;
+      
+      &:hover {
+        background-color: vars.$fourthColor;
+      }
+    }
+
+    .login {
+      width: 100%;
+      text-align: center;
+      padding: 3.5rem 2rem 0 2rem;
+      line-height: 1.5rem;
+    }
+  }
+}

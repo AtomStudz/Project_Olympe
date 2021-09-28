@@ -1,0 +1,31 @@
+@use 'src/styles/vars';
+
+.field {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 0.5rem 0 0.5rem 0;
+
+  .field-label {
+    font-family: vars.$text-quotes;
+    width:40vw;
+    text-align: center;
+  }
+  .field-input {
+    font-family: vars.$text-font;
+    width:60vw;
+    font-weight: bold;
+    justify-self: end;
+    border:none;
+    border-radius:8px;
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin-bottom: 2.5rem;
+
+    &:focus {
+      background-color:vars.$fifthColor;
+      color:white;
+    }
+  }
+}
+

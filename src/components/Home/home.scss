@@ -1,0 +1,134 @@
+@use 'src/styles/vars';
+
+.home {
+  margin-top: 5rem;
+  width:100%;
+  background-image: url("../../assets/images/pexels-background.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+  .home-top {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    width:100%;
+    padding-bottom: 2rem;
+    
+    .home-logo {
+      max-width: 100%;
+      height:100%;
+    }
+
+    .hidden-title { 
+      display:none;
+      visibility:hidden;
+    }
+
+    .welcome {
+      width:100%;
+      text-align:center;
+      align-self: center;
+      font-family: vars.$text-font;
+      color:vars.$thirdColor;
+      font-size:2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 3px vars.$fifthColor;
+    }
+  }
+
+  .random-challenges-list {
+    width: 100%;
+    padding:2rem 0 2rem 0;
+
+    .random-challenges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  .motiv-container {
+    background-color: vars.$thirdColor; 
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: 8rem 0 8rem 0;
+    border-top:solid 2px vars.$fourthColor;
+    border-bottom:solid 2px vars.$fourthColor;
+
+    .motivation-container {
+      width:300px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      background-color: vars.$thirdColor;
+
+
+      .motivation {
+        padding: 1.5rem 0 1.5rem 0;
+        width:280px;
+        border-radius: 60%;
+        margin:2rem;
+      }
+    }
+
+    .text-motivation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: vars.$thirdColor; 
+      width:300px;
+
+      .olympe-presentation {
+        font-family: vars.$text-font;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+        color:vars.$fourthColor;
+
+        img { 
+          width:6rem;
+          padding-bottom: 3rem;
+        }
+
+        .text-presentation {
+          line-height:1.5rem;
+          text-align: center;
+        }
+      }
+     
+    }
+
+    .blob-quote-container { 
+      padding: 1.5rem 0 1.5rem 0;
+      display: flex;
+      justify-content:center; 
+      background-color: vars.$thirdColor; 
+  
+      .random-quote {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 300px;
+        height:300px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFFFFF' d='M51.1,-57.1C66.2,-48.2,78.4,-32.1,78.5,-16.1C78.7,0,66.9,15.9,57.4,33.8C47.9,51.7,40.6,71.7,26.8,79.1C13,86.5,-7.4,81.4,-26.9,74.2C-46.4,67,-65.1,57.7,-74.8,42.4C-84.5,27.2,-85.3,6,-79.2,-11.4C-73.1,-28.8,-60.1,-42.5,-45.8,-51.5C-31.4,-60.5,-15.7,-64.8,1.2,-66.2C18,-67.6,36,-66,51.1,-57.1Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .one-quote {
+          padding:1rem 0 0 0;
+          font-family: vars.$text-quotes;
+          color:vars.$fifthColor;
+          font-size:1.3rem;
+          width:200px;
+          line-height: 1.9rem;
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,199 @@
+@use 'src/styles/vars';
+
+
+.dashboard {
+  width:100%;
+  height: 100%;
+  margin-top: 5rem;
+  background-color:vars.$secondColor;
+  
+  // DASHBOARD TOP =========================================
+  .dashboard-top {
+    width: 100%;
+    background-image: url("../../assets/images/pexels-background.jpg");
+    background-size: cover;
+    background-repeat: contain;
+    display: flex;
+    padding:2rem 0 0 0;
+    border-bottom:  thick double 10px vars.$mainColor;
+    border-top:  thick double 10px vars.$mainColor;
+    
+    .dashboard-content {
+      width: 100%;
+      padding: 0 0 3rem 0;
+
+      h2 {
+        text-shadow: 5px 5px 8px vars.$fifthColor;
+      }
+
+      .dashboard-welcome {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 1rem 2rem 1rem;
+        color: vars.$thirdColor;
+        font-family: vars.$text-quotes;
+        font-weight: bold;
+        font-size: 2.8rem;
+        line-height: 5rem;
+      }
+
+      .dashboard-logo {
+        width: 5rem;
+        height: 5rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+  
+  // DASHBOARD BOTTOM WITH USER CHALLENGES ====================================
+  .dashboard-bottom {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, vars.$mainColor, #f2f7f9, vars.$secondColor);
+  
+    .bottom-title {
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      color:vars.$thirdColor;
+      text-shadow: 2px 2px 3px vars.$fifthColor;
+      font-weight: bold;
+      font-family: vars.$text-font;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      padding: 2rem 0 2.5rem 0;
+      text-align: center;
+
+      .bottom-logo-left {
+        height: 2.5rem;
+        padding: 0 2rem 0 0;
+      }
+
+      .bottom-logo-right {
+        height: 2.5rem;
+        padding: 0 0 0 2rem;
+      }
+    }
+
+    .participates-list {
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+      text-align: center;
+
+      .participate-content {
+        background-image: url("../../assets/images/pexels-background2.jpg");
+        background-size: cover;
+        background-repeat: contain;
+        box-shadow: 0 8px 32px 0 vars.$fourthColor;
+        border-radius: 1em;
+        overflow:hidden;
+        width: 325px;
+        margin: 2em;
+        padding: 0 0 2rem 0;
+        
+        .participate-challenge {
+
+          .user-participate {
+            height:5rem;
+            color: vars.$fifthColor;
+            font-family: vars.$text-font;
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding: 1rem 0 1rem 0;
+            margin: 1rem 0 0 0;
+          }
+
+          p {
+            margin-bottom: 0.5rem;
+            font-family: vars.$text-font;
+          }
+
+          .participate-image {
+            height: 13rem;
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 12px solid vars.$fourthColor;
+          }
+          .participate-description {
+            padding: 0 0.5rem 0 0.5rem;
+            font-size: 1.2rem;
+          }
+
+          .participate-tasks {
+            font-family: vars.$text-font;
+            text-shadow: 1px 1px 1.5px vars.$fourthColor;
+            color: vars.$fourthColor;
+            font-weight: bold;
+            margin-top: 1rem;
+            font-size: 1.3rem
+          }
+
+          .participate-cat-diff {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+
+            .participate-challenge-category {
+              height: 3.5rem;
+            }
+
+            .participate-challenge-difficulty {
+              height: 3.5rem;
+            }
+
+            .participate-edit {
+              height: 3.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .participate-empty {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .participate-empty-title {
+        font-family: vars.$text-font;
+        color:vars.$thirdColor;
+        text-shadow: 2px 2px 3px vars.$fifthColor;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 3rem 0 5rem 0;
+      }
+
+      .participate-empty-text {
+        font-family: vars.$text-font;
+        color:vars.$fifthColor;
+        font-size: 1.5rem;
+        padding: 0 0.5rem 2rem 0.5rem;
+      }
+
+      .zeus-logo {
+        width: 8rem;
+        padding: 4rem 0 0 0;
+      }
+
+      .subscribe-button {
+        padding:1rem 1rem 1rem 1rem;
+        margin: 3rem 0 9rem 0;
+        border-radius: 10px;
+        font-family: vars.$text-font;
+        font-size:1.3rem;
+        background-color:vars.$fifthColor;
+        color:white;
+        font-weight: bold;
+        border:none;
+        
+        &:hover {
+          background-color: vars.$fourthColor;
+        }
+      }
+    }
+  }
+}

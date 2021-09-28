@@ -1,0 +1,73 @@
+@use 'src/styles/vars';
+
+.footer {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23BAD7f2' fill-opacity='1' d='M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:30vh;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding:0 1rem 1rem 2rem;
+
+  .footer-nav {
+    width:100%;
+    display: flex; 
+    flex-wrap: wrap;
+    font-family:vars.$text-font;
+    color:vars.$fourthColor;
+    align-self:flex-end;
+    justify-content:flex-start;
+   
+    .nav-item {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0 2rem 0 0;
+    }
+  }
+  .nav-icon-section {
+    align-self: flex-end;
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+
+    .nav-icon {
+      width:1.5rem;
+      margin: 0 0.5rem 0.2rem 0.5rem;
+      text-align: center;
+    }
+
+    .rights {
+      width:80%;
+      font-size: 0.8rem;
+      align-self: flex-end;
+      align-items: flex-end;
+      text-align: right;
+      padding: 0 0.5rem 0 0.5rem;
+      font-family: vars.$text-font;
+      font-style: italic;
+
+      .rights-oz {
+        padding:0 0 0.4rem 0;
+        border-bottom: solid 1px vars.$fourthColor;
+      }
+    
+      .rights-flaticon {
+        padding:0.3rem 0 0 0;
+      }
+
+      img {
+        width:1.3rem;
+      }
+      
+    }
+    
+  }
+
+}
