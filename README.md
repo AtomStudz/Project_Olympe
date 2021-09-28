@@ -283,4 +283,4 @@ les catégories
 
 # Installation du projet :
  - Yarn install
- - Yarn serve --open
+ - Yarn start --open
